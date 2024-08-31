@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+
+    <style>
+        header{
+            text-align: center;
+            background-color: blue;
+            padding: 20px;
+        }
+        footer{
+            padding: 20px;
+            background-color: blue;
+            color: white;
+            margin-top: 185px;
+        }
+
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+        }
+        .tab {
+            background-color: blue;
+            border: 1px solid;
+            border-bottom: none;
+            border-radius: 4px;
+        }
+        .tab button {
+            background-color: white;
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-weight: bold;
+            margin: 3px;
+        }
+        .tab button:hover {
+            background-color: gold;
+        }
+        .tab button.ativo {
+            background-color: white;
+            color: blue;
+        }
+        .conteudo {
+            border: 1px solid black;
+            border-top: none;
+            padding: 5px 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>João Guilherme Cristino Heidmann</h1>
+    </header>
+
+    <div class="tab">
+        <button onclick="abrirtab(event, 'sobre')">Sobre</button>
+        <button onclick="abrirtab(event, 'carreira')">Carreira</button>
+        <button onclick="abrirtab(event, 'obejetivos')">Obejetivos</button>
+    </div>
+    <div id="sobre" class="conteudo">
+        <h3>Sobre Mim</h3>
+        <p>Sou o João</p>
+    </div>
+    <div id="carreira" class="conteudo">
+        <h3>Carreira</h3>
+        <p>Trabalho Na Maquil</p>
+    </div>
+    <div id="obejetivos" class="conteudo">
+        <h3>Obejtivos</h3>
+        <p>Quero Ser Programador FrontEnd</p>
+    </div>
+    <script>
+        function abrirtab(evento, idTab) {
+            var conteudos = document.getElementsByClassName('conteudo');
+            for (var i = 0; i < conteudos.length; i++) {
+                conteudos[i].style.display = 'none';
+            }
+            document.getElementById(idTab).style.display = 'block';
+            event.currentTarget.ClassName = 'ativo';
+        }
+    </script>
+    <footer>
+        <h2>Contatos</h2>
+        <h4>Instagram</h4>
+        <a href="https://www.instagram.com/alguem.qualquer.vi/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/256/3955/3955024.png" width="50px" height="50px">
+        </a>
+        <h4>GitHub</h4>
+        <a href="https://github.com/JoaoHeidmann" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50px" height="50px">
+        </a>
+    </footer>
+</body>
+</html>
