@@ -1,0 +1,65 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif)
+}
+.Perfil{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.fotoP{
+    padding-top: 10px;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+.nomeP{
+    color: #ffffff;
+    font-size: 40px;
+}
+.botao {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+#sobre{
+    padding-top: 10px;
+}
+#projeto{
+    padding-top: 100px;
+}
+.projeto{
+    width: 300px;
+    height: 300px;
+}
+#contatos{
+    padding-top: 100px;
+}
+.insta{
+    width: 100px;
+    height: 100px;
+}
+.git{
+    width: 100px;
+    height: 100px;
+}
+.linke{
+    width: 100px;
+    height: 100px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}

@@ -1,108 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-
-    <style>
-        .contatos {
-            position: relative;
-        }
-        .endereço {
-            margin-left: 700px;
-        }
-        header{
-            text-align: center;
-            background-color: blue;
-            padding: 20px;
-        }
-        footer{
-            padding: 20px;
-            background-color: blue;
-            color: white;
-            margin-top: 180px;
-        }
-
-        body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: auto;
-        }
-        .tab {
-            background-color: blue;
-            border: 1px solid;
-            border-bottom: none;
-            border-radius: 4px;
-        }
-        .tab button {
-            background-color: white;
-            border: none;
-            outline: none;
-            border-radius: 8px;
-            cursor: pointer;
-            padding: 10px 15px;
-            font-weight: bold;
-            margin: 3px;
-        }
-        .tab button:hover {
-            background-color: gold;
-        }
-        .tab button.ativo {
-            background-color: white;
-            color: blue;
-        }
-        .conteudo {
-            border: 1px solid black;
-            border-top: none;
-            padding: 5px 10px;
-            display: none;
-        }
-    </style>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>João Guilherme Cristino Heidmann</h1>
+        <div class="Perfil">
+            <img class="fotoP" src="https://avatars.githubusercontent.com/u/136392707?v=4" alt="Foto de João Guilherme Cristino Heidmann">
+            <h1 class="nomeP">João Guilherme Cristino Heidmann</h1>
+        </div>
+        <nav>
+            <a href="#inicio" class="botao">Inicio</a>
+            <a href="#sobre" class="botao">Sobre</a>
+            <a href="#projeto" class="botao">Projeto</a>
+            <a href="#contatos" class="botao">Contatos</a>
+        </nav>
     </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao meu portfólio</h2>
+            <p>Este é meu portfólio onde sera uma apresentação pessoal.</p>
+        </section>
 
-    <div class="tab">
-        <button onclick="abrirtab(event, 'sobre')">Sobre</button>
-        <button onclick="abrirtab(event, 'carreira')">Carreira</button>
-        <button onclick="abrirtab(event, 'obejetivos')">Obejetivos</button>
-    </div>
-    <div id="sobre" class="conteudo">
-        <h3>Sobre Mim</h3>
-        <p>Sou o João</p>
-    </div>
-    <div id="carreira" class="conteudo">
-        <h3>Carreira</h3>
-        <p>Trabalho Na Maquil</p>
-    </div>
-    <div id="obejetivos" class="conteudo">
-        <h3>Obejtivos</h3>
-        <p>Quero Ser Programador FrontEnd</p>
-    </div>
-    <script>
-        function abrirtab(evento, idTab) {
-            var conteudos = document.getElementsByClassName('conteudo');
-            for (var i = 0; i < conteudos.length; i++) {
-                conteudos[i].style.display = 'none';
-            }
-            document.getElementById(idTab).style.display = 'block';
-            event.currentTarget.ClassName = 'ativo';
-        }
-    </script>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Prazer sou João Guilherme, sou dedicado e apaixonado por Front-end. <br> 
+            No momento estou apredendo HTML e CSS em desenvolvimento web. <br>
+            Tenho pouca experiencia no Front-end comecei aprender no inicio <br> 
+            do ano, mais decidir a me dedica tem 4 meses.</p>
+            <p>
+            O que me motiva a entrar nessa area é as varias possibilidades, que <br>
+            tem de criação, com isso tenho mais facilidade de me empenhar na area. <br>
+            Entre em contato comigo para poder conversar melhor!
+            </p>
+        </section>
+
+        <section id="projeto">
+            <h2>Meus Projetos</h2>
+            <p>JOGO YAHTZEE</p>
+            <p>Criado um jogo conhecido como YAHTZEE com o codigo java. <br>
+                Onde era possivel jogar normalmente podendo cadastrar, <br>
+                somar pontos, mostrar ganhador, e armazena em arquivo txt. <br>
+            <a href="https://github.com/JoaoHeidmann/yahtzee" target="_blank">Link para conferir!</a>
+            </p>
+            <br>
+            <p>Cien T.I 2023</p>
+            <p>Nesse projeto foi realizado na faculdade FAESA cordenado pela professora Renata. <br>
+            Esse projeto foi feito uma pesquisa e presentada os resultados dela. <br>
+            A pesquisa foi comparando a geranção de processadores antigos com os processadores, <br>
+            atuais mostrando os pontos positivos e pontos negativos.
+            </p>
+            <p>
+            <img class="projeto" src="https://ava.faesa.br/content/enforced/71037-2023_1_D008952_CI-1010-231-1HC2/cienTI-2023.jpg" alt="">
+            </p>
+        </section>
+
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <h4>Instagram</h4>
+            <a href="https://www.instagram.com/alguem.qualquer.vi/" target="_blank">
+            <img class="insta" src="https://cdn-icons-png.flaticon.com/256/3955/3955024.png">
+            </a>
+            <h4>GitHub</h4>
+            <a href="https://github.com/JoaoHeidmann" target="_blank">
+            <img class="git" src="https://cdn-icons-png.flaticon.com/128/733/733553.png">
+            </a>
+            <h4>Linkedin</h4>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-cristino-heidmann-447a58226/" target="_blank">
+            <img class="linke" src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png">
+            </a>
+        </section>
+    </main>
     <footer>
-        <h2 class="endereço">Meu Endereço <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2645.8789996887467!2d-40.4011336915568!3d-20.30697297536995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1spt-BR!2sbr!4v1725486361900!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h2>
-        <h2 class="contatos">Contatos</h2>
-        <h4 class="contatos">Instagram</h4>
-        <a class="contatos" href="https://www.instagram.com/alguem.qualquer.vi/" target="_blank">
-        <img class="contatos" src="https://cdn-icons-png.flaticon.com/256/3955/3955024.png" width="50px" height="50px">
-        </a>
-        <h4>GitHub</h4>
-        <a href="https://github.com/JoaoHeidmann" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50px" height="50px">
-        </a>
+        <p>&copy; 2024 Desenvolvido por João Guilherme Cristino Heidmann. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
