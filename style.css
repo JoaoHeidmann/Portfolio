@@ -38,9 +38,10 @@ main{
     padding-top: 100px;
 }
 .projeto{
+    display: flex;
+    justify-content: center;
     width: 200px;
     height: 200px;
-    image-orientation: from-image;
 }
 #contatos{
     padding-top: 100px;
